@@ -14,8 +14,9 @@ Obtain presence absence for all YEP diet species.
 ## Physical location of the data
 For now, the raw data is on the Robertson lab HCS storage  at otago uni:
 
-/home/ludovic.dutoit/projectsmb://storage.hcs-p01.otago.ac.nz/sci-zoology-kakapogenome/Ludo/YEP_poo_16S_eDNAs/Danioreriohypoxia/source_files/
+/home/ludovic.dutoit/projectsmb://storage.hcs-p01.otago.ac.nz/sci-zoology-kakapogenome/Ludo/YEP_poo_16S_eDNAs/
 
+The output files of qiime qzv and qza files are also there in processed_data (tocome)
 Metadata info *tocome*
 
 ## Source files
