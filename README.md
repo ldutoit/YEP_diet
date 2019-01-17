@@ -42,3 +42,9 @@ The fastqc also shows large amount of nextera transposase left.
 I start by cleaning the nextera transposase using [removenextera.sh](removenextera.sh). I also add a Quality threshold of a PHREDscore 25 using TrimGalore.
 
 Analyses done in QIIME2 explaineed in [QIIME2pipe.md](QIIME2pipe.md)
+
+## Species list
+
+I used [specieslist_vs_database.py](specieslist_vs_database.py) to compare the list of species we have in the databse vs the list of comnmon preys supplied by Bruce. I summarized all of this in [curatedspecies_list_notes.csv](metadata/curatedspecies_list_notes.csv).
+
+I also used [summary_features_taxonomy.md](summary_features_taxonomy.md) to see how the features we have were assigned to taxonomy summaries.

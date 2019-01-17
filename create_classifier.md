@@ -68,18 +68,37 @@ qiime tools import \
 
 
 
-We then use them to create a set of raw reads to train the classifier on.
+We then use them to create a set of raw reads to train the classifier on. We first clip the sequences using our primers.
 
+The primers given by Bruce:
 
-WE ARE HERE
+```
+16S_LONG_Cephal_F
+TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGGACGAGAAGACCCTAWTGAGCT
+16S_LONG_Cephal_R
+GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGAAATTACGCTGTTATCCCT
+16S_LONG_Chord_F
+TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCGAGAAGACCCTRTGGAGCT
+16S_SHORT_Chord_R
+GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGTATCCTNGGTCGCCCCAAC
+```
 
+We need to remove the Nextera adapters:
+
+```
+Read 1
+5’ TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG
+Read 2
+5’ GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG
+
+```
 
 **cephalopods**
 ```
 qiime feature-classifier extract-reads \
   --i-sequences allrecordsncbi.qza \
-  --p-f-primer TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGGACGAGAAGACCCTAWTGAGCT \ ??
-  --p-r-primer GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGAAATTACGCTGTTATCCCT \ ??
+  --p-f-primer  GACGAGAAGACCCTAWTGAGCT \
+    --p-r-primer  AAATTACGCTGTTATCCCT \
   --p-min-length 50 \
   --p-max-length 400 \
   --o-reads ref-seqsceph.qza
@@ -89,36 +108,54 @@ qiime feature-classifier extract-reads \
 ```
 qiime feature-classifier extract-reads \
   --i-sequences allrecordsncbi.qza \
-  --p-f-primer TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCGAGAAGACCCTRTGGAGCT  \ 
-  --p-r-primer GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGTATCCTNGGTCGCCCCAAC \ 
+  --p-f-primer CGAGAAGACCCTRTGGAGCT  \
+  --p-r-primer  TATCCTNGGTCGCCCCAAC \
   --p-min-length 50 \
   --p-max-length 400 \
   --o-reads ref-seqschor.qza
 ```
-**HERE NOW, combine if needed!!**
+**Combine them**
+
+```
+#Export
+qiime tools export --input-path  ref-seqschor.qza  --output-path ref-seqschor
+qiime tools export --input-path  ref-seqsceph.qza  --output-path ref-seqsceph
+#combine them
+cat ref-seqsceph/dna-sequences.fasta ref-seqschor/dna-sequences.fasta > dna-squences_combined.fasta
 
 
-### Verify taxonomic bredth of classifier
+qiime tools import \
+  --type 'FeatureData[Sequence]' \
+  --input-path allrecordsncbi.fasta \
+  --output-path allrecordsncbi_clipped.qza
+```
 
-I want to know wether all the species suggested by Mel are in the database.
+### Verify taxonomic breadth of classifier
+
+I want to know wether all the species suggested by Mel are in the database!!!
 
 **get the sequences from the classifier**
 
-```
-qiime tools export --input-path  ref-seqschor.qza  --output-path ref-seqs
-```
+
 **Accession Mel wanted**
  cat /Users/dutlu42p/Documents/Work/projects/BruceRobertson/YEPedna/16S\ Genbank\ downloads/*/*flat  | grep ACCESSION
 
+THEM IN CONSTRUCTION
 
-MATCH THEM IN CONSTRUCTION
+
 ### Train classifier
 
 ```
 qiime feature-classifier fit-classifier-naive-bayes \
-  --i-reference-reads ref-seqschor.qza \
-  --i-reference-taxonomy  taxonomy/ref-taxonomy.qza \
+  --i-reference-reads allrecordsncbi_clipped.qza \
+  --i-reference-taxonomy  ref-taxonomy.qza \
   --o-classifier classifier.qza
 ```
 
 Great! we now have a trained classifier.
+
+I just output the clipped sequences as a fasta file so that I can see which species are still in there or not:
+
+```
+qiime tools export --input-path allrecordsncbi_clipped.qza  --output-path dna_sequences_clipped
+```
