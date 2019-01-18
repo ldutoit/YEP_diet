@@ -18,7 +18,7 @@ with open ("metadata/featuresummary.txt") as f:
 
 #add taxonomy and output
 output=open(outputfile,"w")
-output.write("\t".join(["numberofsequenecesassigned","numberofsamples","sequence_length","sequence","featurecode"])+"\n")
+output.write(",".join(["numberofsequenecesassigned","numberofsamples","sequence_length","sequence","featurecode"])+"\n")
 for feature in summary_features.keys():
 	summary_features[feature].append(taxo_summary[feature])
 	summary_features[feature].append(str(len(features_fasta[feature])))
