@@ -50,10 +50,7 @@ I used [specieslist_vs_database.py](specieslist_vs_database.py) to compare the l
 I also used [summary_features_taxonomy.md](summary_features_taxonomy.md) to see how the features we have were assigned to taxonomy summaries.
 
 
-## Open reference idea
+## "Closed" reference idea
 
-**In construction**
 
-"closed_classifier.md"
-Use all the species I find in the first round .. make a closed reference, re run it and assign the rest...
-
+[closed_classifier.md](closed_classifier_QIIME.md) 

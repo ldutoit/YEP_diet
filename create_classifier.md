@@ -121,26 +121,18 @@ qiime feature-classifier extract-reads \
 qiime tools export --input-path  ref-seqschor.qza  --output-path ref-seqschor
 qiime tools export --input-path  ref-seqsceph.qza  --output-path ref-seqsceph
 #combine them
-cat ref-seqsceph/dna-sequences.fasta ref-seqschor/dna-sequences.fasta > dna-squences_combined.fasta
+cat ref-seqsceph/dna-sequences.fasta ref-seqschor/dna-sequences.fasta > dna-squences_combined_clipped.fasta
 
 
 qiime tools import \
   --type 'FeatureData[Sequence]' \
-  --input-path allrecordsncbi.fasta \
+  --input-path dna-squences_combined_clipped.fasta \
   --output-path allrecordsncbi_clipped.qza
 ```
 
 ### Verify taxonomic breadth of classifier
 
-I want to know wether all the species suggested by Mel are in the database!!!
-
-**get the sequences from the classifier**
-
-
-**Accession Mel wanted**
- cat /Users/dutlu42p/Documents/Work/projects/BruceRobertson/YEPedna/16S\ Genbank\ downloads/*/*flat  | grep ACCESSION
-
-THEM IN CONSTRUCTION
+ADD MEL SEQUENCES AS DONE IN closed_classifier_QIIME.md
 
 
 ### Train classifier

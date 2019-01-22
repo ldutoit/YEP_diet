@@ -95,9 +95,11 @@ export TMPDIR="/home/ludovic.dutoit/projects/tmp"
 
 and then  I can finally assign stuff!
 
+I AM HERE
+
 ```
 qiime feature-classifier classify-sklearn \
-  --i-classifier classifier.qza \
+  --i-classifier taxonomy_round2/classifier.qza \
   --i-reads  rep-seqs-dada2.qza \
   --o-classification taxonomy.qza
 
@@ -125,7 +127,7 @@ I want to know wether each sample has enough depth of sequencing. I conduct alph
 qiime diversity alpha-rarefaction \
   --i-table table-dada2.qza \
   --p-max-depth 4000 \
-  --m-metadata-file  ~/repos/scripts/YEP_diet/metadata/sample_metadatarare.tsv \ 
+  --m-metadata-file  ~/repos/scripts/YEP_diet/metadata/sample_metadatarare.tsv \
   --o-visualization alpha-rarefaction.qzv
  ```
 
