@@ -123,21 +123,51 @@ qiime tools export --input-path  ref-seqsceph.qza  --output-path ref-seqsceph
 #combine them
 cat ref-seqsceph/dna-sequences.fasta ref-seqschor/dna-sequences.fasta > dna-squences_combined_clipped.fasta
 
+```
+
+### Verify taxonomic breadth of classifier
+
+I add them manually and create the file by adding those lines to  beginning of dna-squences_combined_clipped.fasta:
+
+
+
+```
+>MEL00002.1
+CCCCTTCAGAGAGGGCCAAATTAAGTGACCCTGCCCTAATGTCTTTGGTTGGGGCGACCGCGGGGAAGCACTTATCCCCCACGTAGGCTGGGAAAACCTCCTATAAACAAGAGCTTCAGCTCTAATAATCAGAACCTCTGACTAAAAATGATCCGGCAAAGCCGATCAACGGACCGAGTTACCCTAGGGATAACAGCGCAATC
+>MEL00003.1
+ACCCTAAACAAAGGACTGAACTGAACAAACCATGCCCCTCTGTCTTAGGTTGGGGCGACCCCGAGGAAACAAAAAACCCACGAGTGGAATGGGAGCACTGACCTCCTACAACCAAGAGCTGCAGCTCTAACTAATAGAATTTCTAACCAATAATGATCCGGCAAAGCCGATTAACGAACCAAGTTACCCTAGGGATAAAGCGCAATC
+>MEL00004.1
+CCCCCAGACAAGGGGCCAAACCAAATGATCCCTGCCCTAATGTCTTTGGTTGGGGCGACCGCGGGGCAACAAAAAACCCCCACGTGGAATGGGACTATCCTCCTACAAACAAGAGCTGCAGCTCTAGTTCACAGAATTTCTGACCAATAAGATCCGGCAAAGCCGATCAACGAACCGAGTTACCCTAGGGATAAAGCGCAATC
+>MEL00001.1
+GCCCCCTAAAAGGCAACAAGCCAGTAACCTCATTTTAATATCTTTAGTTGGGGCGACCGCGGAGTAAAACAAAACCTCCGTGAGGATTGAGGTAAAACCTTATACCTAAGAAAGTCATTTCTAAGCACCAAAATATTTGACCTAAAGATCCGGCAATAGCCGATCAACGAACCTAGTTACCCCAGGGATAAAGCGCAATC
+```
+
+
+and those to beginning of allrecordsncbi_accession.txt:
+
+```
+MEL00001.1  Chordata;Actinopteri;Syngnathiformes;Syngnathidae;Hippocampus;Hippocampus abdominalis
+MEL00002.1  Chordata;Actinopteri;Uranoscopiformes;Pinguipedidae;Parapercis;Parapercis colias
+MEL00003.1 Chordata;Actinopteri;Scombriformes;Gempylidae;Thyrsites;Thyrsites atun
+MEL00004.1  Chordata;Actinopteri;Labriformes;Labridae;Bodianus;Bodianus unimaculatus 
+```
+
+
+### Re import and Train classifier
+
+```
+qiime tools import \
+  --type 'FeatureData[Taxonomy]' \
+  --input-format HeaderlessTSVTaxonomyFormat \
+  --input-path allrecordsncbi_accession.txt \
+  --output-path ref-taxonomy.qza
 
 qiime tools import \
   --type 'FeatureData[Sequence]' \
   --input-path dna-squences_combined_clipped.fasta \
   --output-path allrecordsncbi_clipped.qza
-```
-
-### Verify taxonomic breadth of classifier
-
-ADD MEL SEQUENCES AS DONE IN closed_classifier_QIIME.md
 
 
-### Train classifier
-
-```
 qiime feature-classifier fit-classifier-naive-bayes \
   --i-reference-reads allrecordsncbi_clipped.qza \
   --i-reference-taxonomy  ref-taxonomy.qza \
