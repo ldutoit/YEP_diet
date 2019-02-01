@@ -53,4 +53,4 @@ I also used [summary_features_taxonomy.md](summary_features_taxonomy.md) to see 
 ## "Closed" reference idea
 
 
-[closed_classifier.md](closed_classifier_QIIME.md) 
+[closed_classifier.md](closed_classifier_QIIME.md) and then back to [QIIME2pipe.md](QIIME2pipe.md). It did not work so well.

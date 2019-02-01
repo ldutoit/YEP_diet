@@ -2,7 +2,7 @@
 
 from Bio import SeqIO
 
-outputfile = "output/summary_features_taxo.csv"
+outputfile = "output/summary_features_taxo_wuithMel.csv"
 
 taxo_summary = {line.split("\t")[0]:line.split("\t")[1] for line in open("metadata/feature_taxonomy.csv")}
 features_fasta =  {seq.id:  str(seq.seq) for seq in SeqIO.parse("metadata/features.fasta", "fasta")}

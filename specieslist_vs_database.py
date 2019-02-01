@@ -18,3 +18,7 @@ for spname in  species_list:
 		print "NO", spname,"genus matching:",len(records)>0,len(listmatching)
 	else:
 		print spname, "OK"
+
+
+for spname in  species_list:
+	print spname
