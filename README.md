@@ -45,12 +45,25 @@ Analyses done in QIIME2 explaineed in [QIIME2pipe.md](QIIME2pipe.md)
 
 ## Species list
 
-I used [specieslist_vs_database.py](specieslist_vs_database.py) to compare the list of species we have in the databse vs the list of comnmon preys supplied by Bruce. I summarized all of this in [curatedspecies_list_notes.csv](metadata/curatedspecies_list_notes.csv).
+I used [specieslist_vs_database.py](specieslist_vs_database.py) to compare the list of species we have in the databse vs the list of comnmon preys supplied by Bruce. I summarized all of this in [curatedspecies_list_notes.csv](output/<statusofdetectability44 class="xlsx"></statusofdetectability44>).
 
 I also used [summary_features_taxonomy.md](summary_features_taxonomy.md) to see how the features we have were assigned to taxonomy summaries.
-
-
+I then went on a round to improve the database manually [improvedb.md](improvedb.md)
 ## "Closed" reference idea
 
 
 [closed_classifier.md](closed_classifier_QIIME.md) and then back to [QIIME2pipe.md](QIIME2pipe.md). It did not work so well.
+
+
+
+## Clean Run on different primer pairs
+
+One idea forward was to separate the two primer pairs in two datasets.
+
+This was done by separating the fastq file according to the first 6bp of both primers using [sort_by_primers.py](sort_by_primers.py). 
+
+We then ran two independant analysis:
+
+[QIIME2pipe.md](QIIME2pipeSEPARATEDPRIMERS.md)
+
+and then I summarise the info at the population level using [summary_features_taxonomy_primerpsec.md](summary_features_taxonomy_primerpsec.md)
