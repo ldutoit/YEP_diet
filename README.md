@@ -58,12 +58,16 @@ I then went on a round to improve the database manually [improvedb.md](improvedb
 
 ## Clean Run on different primer pairs
 
-One idea forward was to separate the two primer pairs in two datasets.
+I start by cleaning the nextera transposase using [removenextera.sh](removenextera.sh). I also add a Quality threshold of a PHREDscore 25 using TrimGalore.
 
-This was done by separating the fastq file according to the first 6bp of both primers using [sort_by_primers.py](sort_by_primers.py). 
+The idea is to separate the two primer pairs in two datasets.
+
+This was done by separating the fastq file according to the first 6bp of both primers using [sort_by_primers.py](sort_by_primers.py). I also need to remove the primers drom the sequences, I do it using [removeprimers.md](removeprimers.md)
 
 We then ran two independant analysis:
 
-[QIIME2pipe.md](QIIME2pipeSEPARATEDPRIMERS.md)
+**[QIIME2pipeCHORDATES.md](QIIME2pipeCHORDATES.md)**
+
+**[QIIME2pipeCEPHALO.md](QIIME2pipeCEPHALO.md)**
 
 and then I summarise the info at the population level using [summary_features_taxonomy_primerpsec.md](summary_features_taxonomy_primerpsec.md)

@@ -8,7 +8,7 @@
 
 I follow [info](https://docs.qiime2.org/2018.11/tutorials/importing/#manifest-file) and a phred score quality [here](https://www.drive5.com/usearch/manual/quality_score.html) to be able to create the write import command.
 
-First I created a [manifest](metadata/manifest) file matching fastq to sample IDs. It should be noted than QIIME2 only accpets absolute paths for this. This also directly assign samples to fastq and the output file is therefore demultiplexed.
+First I created a [manifest](metadata/manifestcephalo) file matching fastq to sample IDs. It should be noted than QIIME2 only accpets absolute paths for this. This also directly assign samples to fastq and the output file is therefore demultiplexed.
 
 ```
 #module load Miniconda3
@@ -28,29 +28,24 @@ qiime demux summarize   --i-data paired-end-demuxcephalo.qza  --o-visualization 
 
 
 **Forward reads**
-
-
-**Total Sequences Sampled**|**10000**
-
-Forward Reads
 Total Sequences Sampled 10000
-2%  46 nts
-9%  46 nts
-25% 200 nts
-50% (Median)  200 nts
-75% 200 nts
-91% 200 nts
-98% 200 nts
+2%  6 nts
+9%  6 nts
+25% 178 nts
+50% (Median)  178 nts
+75% 178 nts
+91% 178 nts
+98% 178 nts
 
-Reverse Reads
+**Reverse Reads**
 Total Sequences Sampled 10000
-2%  46 nts
-9%  46 nts
-25% 200 nts
-50% (Median)  200 nts
-75% 200 nts
-91% 200 nts
-98% 200 nts
+2%  6 nts
+9%  6 nts
+25% 180 nts
+50% (Median)  181 nts
+75% 181 nts
+91% 181 nts
+98% 181 nts
 
 ### Denoising
 
@@ -58,14 +53,13 @@ Based on what I oberved previously I remove the very short sequences!
 
 ```
 #!/bin/sh
-# source activate /scale_wlg_persistent/filesets/project/uoo00116/repos
 qiime dada2 denoise-paired \
  --i-demultiplexed-seqs paired-end-demuxcephalo.qza \
  --o-representative-sequences rep-seqs-dada2cephalo.qza \
  --o-table table-dada2cephalo.qza \
  --p-n-threads 8 \
- --p-trunc-len-f 50 \
- --p-trunc-len-r 50 \
+ --p-trunc-len-f 0 \
+ --p-trunc-len-r 0 \
  --o-denoising-stats stats-dada2cephalo.qza 
 ```
 

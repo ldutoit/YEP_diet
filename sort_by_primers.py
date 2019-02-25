@@ -53,6 +53,9 @@ for filename in file_starts:
     	 	if title.split()[0] in final_primerchordates: output2chordates.write("\n".join([ "@"+title, seq,"+", qual])+"\n")
 	print(filename,len(final_primerchordates),"chordates",len(final_primercephalo),"cephalo",(len(final_primerchordates)+len(final_primercephalo))/(0.01*float(total_counts)),"%",total_counts)
 
+
+
+\
 #('/home/ludovic.dutoit/projects/edna_yep/clean_nextera/C6GNB-3968-195-32-01_S195_', 3521, 'chordates', 17728, 'cephalo', 93.17693488270116, '%', 22805)
 #('/home/ludovic.dutoit/projects/edna_yep/clean_nextera/C6GNB-3968-145-32-01_S145_', 21019, 'chordates', 8, 'cephalo', 93.37448376926152, '%', 22519)
 #('/home/ludovic.dutoit/projects/edna_yep/clean_nextera/C6GNB-3968-114-32-01_S114_', 9427, 'chordates', 12638, 'cephalo', 93.20745152705614, '%', 23673)

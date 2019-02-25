@@ -1,14 +1,14 @@
 # QIIME2pipe.md
 
 **in construction**
-
+ 
 ### Summary
 
 ### import the data
 
 I follow [info](https://docs.qiime2.org/2018.11/tutorials/importing/#manifest-file) and a phred score quality [here](https://www.drive5.com/usearch/manual/quality_score.html) to be able to create the write import command.
 
-First I created a [manifest](metadata/manifest) file matching fastq to sample IDs. It should be noted than QIIME2 only accpets absolute paths for this. This also directly assign samples to fastq and the output file is therefore demultiplexed.
+First I created a [manifest](metadata/manifestchordates) file matching fastq to sample IDs. It should be noted than QIIME2 only accpets absolute paths for this. This also directly assign samples to fastq and the output file is therefore demultiplexed.
 
 ```
 #module load Miniconda3
@@ -27,33 +27,31 @@ qiime demux summarize   --i-data paired-end-demuxchordates.qza   --o-visualizati
 ```
 
 
-**Forward reads**
 
 
 **Total Sequences Sampled**|**10000**
-:-----:|:-----:
 Forward Reads
 Total Sequences Sampled 10000
-2%  104 nts
-9%  106 nts
-25% 115 nts
-50% (Median)  115 nts
-75% 117 nts
-91% 117 nts
-98% 200 nts
-
+2%  68 nts
+9%  68 nts
+25% 77 nts
+50% (Median)  79 nts
+75% 79 nts
+91% 79 nts
+98% 180 nts
 **Forward reads**
 
 
 **Reverse reads**|**10000**
-rtotal Sequences Sampled  10000
-2%  104 nts
-9%  106 nts
-25% 115 nts
-50% (Median)  115 nts
-75% 117 nts
-91% 117 nts
-98% 200 nts
+
+Total Sequences Sampled 10000
+2%  66 nts
+9%  68 nts
+25% 77 nts
+50% (Median)  79 nts
+75% 79 nts
+91% 79 nts
+98% 181 n
 
 ### Denoising
 
