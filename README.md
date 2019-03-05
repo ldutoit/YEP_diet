@@ -74,7 +74,7 @@ from the visualisation on the qiime2 website of:
 
 
 
-*IN CONSTRUCTION* STILL uNCLEAR HOW I AM DELETING low quality samples
+**BELOW IN CONSTRUCTION STILL UNCLEAR HOW I AM DELETING low quality samples**
 
 ## Species list
 
