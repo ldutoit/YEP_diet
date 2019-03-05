@@ -20,7 +20,7 @@ The output files of qiime qzv and qza files are also there in processed_data (to
 Metadata info *tocome*
 
 ## Source files
-the original data comes consists of 16S samples for 220 penguins.
+the original data comes consists of 16S samples for 220 penguins. 1 is metagenomic data. The other 219 are 
 ## Analyses
 
 ### Quick and Dirty
@@ -64,9 +64,17 @@ this was by far the best approach. Probably also  because I removed the primers 
 
 We filtered sequences a bit further before visualisation using [downstreamfiltering.md](downstreamfiltering.md)
 
+[output/cephalo.csv](output/cephalo.csv)
+[output/chordates.csv](output/chordates.csv)
+
+from the visualisation on the qiime2 website of:
+
+[output/taxa-bar-plotschordates.qzv](output/taxa-bar-plotschordates.qzv)
+[output/taxa-bar-plotscephalo.qzv](output/taxa-bar-plotscephalo.qzv)
 
 
-*IN CONSTRUCTION*
+
+*IN CONSTRUCTION* STILL uNCLEAR HOW I AM DELETING low quality samples
 
 ## Species list
 
