@@ -1,5 +1,9 @@
 #feature_taxo_summary.py
+#/Users/dutlu42p/repos/mahuika/YEP_diet/ personal path
+
 from Bio import SeqIO
+
+
 
 global_outputfile = "output/summary_features_taxo_primerspec_global.csv"
 chordates_outputfile = "output/summary_features_taxo_primerspec_chordates.csv"

@@ -35,25 +35,6 @@ There is plenty of fish.
 The fastqc also shows large amount of nextera transposase left.
 
 
-### Clean run
-
-
-
-I start by cleaning the nextera transposase using [removenextera.sh](removenextera.sh). I also add a Quality threshold of a PHREDscore 25 using TrimGalore.
-
-Analyses done in QIIME2 explaineed in [QIIME2pipe.md](QIIME2pipe.md)
-
-## Species list
-
-I used [specieslist_vs_database.py](specieslist_vs_database.py) to compare the list of species we have in the databse vs the list of comnmon preys supplied by Bruce. I summarized all of this in [curatedspecies_list_notes.csv](output/<statusofdetectability44 class="xlsx"></statusofdetectability44>).
-
-I also used [summary_features_taxonomy.md](summary_features_taxonomy.md) to see how the features we have were assigned to taxonomy summaries.
-I then went on a round to improve the database manually [improvedb.md](improvedb.md)
-## "Closed" reference idea
-
-
-[closed_classifier.md](closed_classifier_QIIME.md) and then back to [QIIME2pipe.md](QIIME2pipe.md). It did not work so well.
-
 
 
 ## Clean Run on different primer pairs
@@ -71,3 +52,26 @@ We then ran two independant analysis:
 **[QIIME2pipeCEPHALO.md](QIIME2pipeCEPHALO.md)**
 
 and then I summarise the info at the population level using [summary_features_taxonomy_primerpsec.md](summary_features_taxonomy_primerpsec.md)
+
+this was by far the best approach. Probably also  because I removed the primers from the sequences.
+
+
+
+
+
+
+## Downstream filtering
+
+We filtered sequences a bit further before visualisation using [downstreamfiltering.md](downstreamfiltering.md)
+
+
+
+*IN CONSTRUCTION*
+
+## Species list
+
+I used [specieslist_vs_database.py](specieslist_vs_database.py) to compare the list of species we have in the databse vs the list of comnmon preys supplied by Bruce. I summarized all of this in [curatedspecies_list_notes.csv](output/statusofdetectability44.xlsx).
+
+I also used [summary_features_taxonomy.md](summary_features_taxonomy.md) to see how the features we have were assigned to taxonomy summaries.
+
+We used that as a crude look of the data.
