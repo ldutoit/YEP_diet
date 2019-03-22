@@ -113,19 +113,4 @@ qiime taxa barplot \
   --o-visualization taxa-bar-plotscephalo.qzv
 ```
 
-Using [Qiime2 view](https://view.qiime2.org) and the file taxa-bar-plots.qzv I downloaded this at the genes and the species level in output/level5allmetazoan.txt and output/level6allmetazoan.txt
 
-### Alpha rarefaction
-
-
-I want to know wether each sample has enough depth of sequencing. I conduct alpha rarefaction analysis after struggling with the format of metadata.
-
-```
-qiime diversity alpha-rarefaction \
-  --i-table table-dada2.qza \
-  --p-max-depth 4000 \
-  --m-metadata-file  ~/repos/scripts/YEP_diet/metadata/sample_metadatarare.tsv \
-  --o-visualization alpha-rarefactioncephalo.qzv
- ```
-
- I download the csv output from qiime view on alpha-rarefaction.qzv in [output/observed_otus_alpha_rare.csv](output/observed_otus_alpha_rare.csv). I analysed it using [alpharare.R](alpharare.R) to generate plots per sample and a tata summary in [output/summaryalpharare](output/summaryalpharare)

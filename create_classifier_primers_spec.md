@@ -104,25 +104,51 @@ qiime feature-classifier extract-reads \
   --p-max-length 400 \
   --o-reads ref-seqschor.qza
 ```
-#add mel sequences!!
+
+for chordates, we want to be able to add a few local sequences of important species:
 
 ```
- echo ">MEL00002.1
-CCCCTTCAGAGAGGGCCAAATTAAGTGACCCTGCCCTAATGTCTTTG
->MEL00003.1q
-ACCCTAAACAAAGGACTGAACTGAACAAACCATGCCCCTCTGTCTTAG
->MEL00004.1
-CCCCCAGACAAGGGGCCAAACCAAATGATCCCTGCCCTAATGTCTTTG
->MEL00001.1
-GCCCCCTAAAAGGCAACAAGCCAGTAACCTCATTTTAATATCTTTA" > melseq.fa
-```
-```
-cat melseq.fa ref-seqschor.fa  > ref-seqschorwithmel.fa
+# we export the one we have so far from the qiime object
+qiime tools export --input-path  ref-seqschor.qza  --output-path ref-seqschor
+cp ref-seqschor/dna-sequences.fasta > ref-seqschor.fa
+# add those seqs to
+ echo ">Auchenoceros_punctatus
+TTAGACTTAAAATAAATTGCACTCTCATATTACTTACCCAATTAAATTCAGCAAATAAATATTGAAATGTCTTTG
+>Bluecodconsensus_sequence
+TTAGACACGAAGACAGCTCACCCCCCTTCCCCCTTCAGAAAAGGGCCAAATTAAGTGACCCTGCCCTAATGTCTTTG
+AGAACCTCTGACTAAAAATGATCCGGCAAAGCCGATCAACGGACCGAGTTACCCT
+>Silverside_consensus_sequence
+TTAGACAAAAGGTAGACCACGTTTAACCCCCCTCCCTAACAGGACTAAACACAGTGCTCCCCTAACCTATATGTCTTTG" > extraseq.fa
 ```
 
+and those to beginning of allrecordsncbi_accession.txt:
+
+
+```
+cat extraseq.fa ref-seqschor.fa  > ref-seqschorwithextra.fa
+```
+and the taxonomy to beginning of allrecordsncbi_accession.txt (tab separated two columns):
+
+```
+Auchenoceros_punctatus  Chordata;Actinopteri;Gadiformes;Moridae;Auchenoceros;Auchenoceros punctatus
+Bluecodconsensus_sequence Chordata;Actinopteri; Trachiniformes;Pinguipedidae;Parapercis;Parapercis colias
+Silverside_consensus_sequence Chordata;Actinopteri;Argentiniformes;Argentinidae;Argentina;Argentina elongata
+```
+
+
+```
+#reimport taxonomy
+
+qiime tools import \
+  --type 'FeatureData[Taxonomy]' \
+  --input-format HeaderlessTSVTaxonomyFormat \
+  --input-path allrecordsncbi_accession.txt \
+  --output-path ref-taxonomy.qza
+
+```
+Cephalopods do not have extra sequences.
 
 ## IMPORT and train
-Cephalopods do not have extra sequences.
 
 
 ### Chordates
@@ -130,7 +156,7 @@ Cephalopods do not have extra sequences.
 ```
 qiime tools import \
   --type 'FeatureData[Sequence]' \
-  --input-path ref-seqschorwithmel.fa \
+  --input-path ref-seqschorwithextra.fa \
   --output-path allrecordsncbi_clippedchor.qza
 
 qiime feature-classifier fit-classifier-naive-bayes \

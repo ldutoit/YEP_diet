@@ -64,22 +64,13 @@ this was by far the best approach. Probably also  because I removed the primers 
 
 We filtered sequences a bit further before visualisation using [downstreamfiltering.md](downstreamfiltering.md)
 
-[output/cephalo.csv](output/cephalo.csv)
-[output/chordates.csv](output/chordates.csv)
-
-from the visualisation on the qiime2 website of:
-
-[output/taxa-bar-plotschordates.qzv](output/taxa-bar-plotschordates.qzv)
-[output/taxa-bar-plotscephalo.qzv](output/taxa-bar-plotscephalo.qzv)
+!!FILL IN FINAL TABLES
 
 
+## Proportion per types
 
-**BELOW IN CONSTRUCTION STILL UNCLEAR HOW I AM DELETING low quality samples**
+[Proportionpertypes.md](Proportionpertypes.md) allows us to look at which proportion of the reads inputted are usable for chordates ( target species sequenced with enough data) vs which proportion of the data is Hohio, non-target species or target species with low taxonomic resolution / quality of sequence.
 
-## Species list
+This is repeated in proportionpertypescephalo.md
 
-I used [specieslist_vs_database.py](specieslist_vs_database.py) to compare the list of species we have in the databse vs the list of comnmon preys supplied by Bruce. I summarized all of this in [curatedspecies_list_notes.csv](output/statusofdetectability44.xlsx).
-
-I also used [summary_features_taxonomy.md](summary_features_taxonomy.md) to see how the features we have were assigned to taxonomy summaries.
-
-We used that as a crude look of the data.
+!!FILMIN THE TWO FINAL TABLES
