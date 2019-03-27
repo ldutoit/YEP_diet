@@ -57,9 +57,6 @@ this was by far the best approach. Probably also  because I removed the primers 
 
 
 
-
-
-
 ## Downstream filtering
 
 We filtered sequences a bit further before visualisation using [downstreamfiltering.md](downstreamfiltering.md)
