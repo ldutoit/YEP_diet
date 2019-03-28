@@ -67,8 +67,8 @@ I then summarised the info at the population level using [summary_features_taxon
 
 We filtered sequences a bit further before visualisation using [downstreamfiltering.md](downstreamfiltering.md)
 
-!!FILL IN FINAL TABLES
-
+[output/final_table_cephalo.csv](output/final_table_cephalo.csv)
+[output/final_table_chordates.csv](output/final_table_chordates.csv)
 
 ## Proportion per types
 
@@ -76,7 +76,9 @@ We filtered sequences a bit further before visualisation using [downstreamfilter
 
 This is repeated in [proportionpertypescephalo.md](proportionpertypescephalo.md)
 
-!!FILMIN THE TWO FINAL TABLES
+We outputted:
 
+[output/cephalo_proportion_tables.txt](output/cephalo_proportion_tables.txt)
+[output/chordates_proportion_tables.txt]([output/chordates_proportion_tables.txt])
 
 **FOR MEL**
