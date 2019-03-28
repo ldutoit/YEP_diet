@@ -20,6 +20,8 @@ For now, the raw data is on the Robertson lab HCS storage  at otago uni:
 
 *to come*
 
+Methods.txt
+Input
 
 ## Source files
 the original data consists of 16S samples for 220 penguins. 1 is metagenomic data. The other 219 are 16S amplicon sequenced with 2 pairs of primers, one to amplify a cephalopod 16S fragment and one to amplify a fish 16S fragment.
@@ -70,9 +72,9 @@ We filtered sequences a bit further before visualisation using [downstreamfilter
 
 ## Proportion per types
 
-[Proportionpertypes.md](Proportionpertypes.md) allows us to look at which proportion of the reads inputted are usable for chordates ( target species sequenced with enough data) vs which proportion of the data is Hohio, non-target species or target species with low taxonomic resolution / quality of sequence.
+[Proportionpertypeschordates.md](Proportionpertypeschordates.md) allows us to look at which proportion of the reads inputted are usable for chordates ( target species sequenced with enough data) vs which proportion of the data is Hohio, non-target species or target species with low taxonomic resolution / quality of sequence.
 
-This is repeated in proportionpertypescephalo.md
+This is repeated in [proportionpertypescephalo.md](proportionpertypescephalo.md)
 
 !!FILMIN THE TWO FINAL TABLES
 
