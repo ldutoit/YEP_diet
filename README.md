@@ -81,4 +81,7 @@ We outputted:
 [output/cephalo_proportion_tables.txt](output/cephalo_proportion_tables.txt)
 [output/chordates_proportion_tables.txt]([output/chordates_proportion_tables.txt])
 
+
+## completeness of database
+We compared the list of records to the species presnece in our databases using [specieslist_vs_database_primer_spec.py](specieslist_vs_database_primer_spec.py) and a bit of manual editing to produce the file: [metadata/database_completedness.csv](metadata/database_completedness.csv)
 **FOR MEL**

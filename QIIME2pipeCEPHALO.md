@@ -49,7 +49,6 @@ Total Sequences Sampled 10000
 
 ### Denoising
 
-Based on what I oberved previously I remove the very short sequences!
 
 ```
 #!/bin/sh

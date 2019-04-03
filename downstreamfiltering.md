@@ -30,7 +30,7 @@ qiime feature-table filter-features \
  qiime taxa filter-table --p-include cephalopoda --i-table sample-contingency-filtered-table.qza --i-taxonomy taxonomy_cephalo.qza --o-filtered-table table-dada2cephalo50.qza --p-mode contains
 ```
 
-I have a look at the alpja rarefaction curves to know hww many reads is enough:
+I have a look at the alpha rarefaction curves to know hww many reads is enough:
 
 
 ```
@@ -52,7 +52,11 @@ qiime diversity alpha-rarefaction \
   --m-metadata-file  ~/repos/scripts/YEP_diet/metadata/sample_metadatarare.tsv \
   --o-visualization alpharare50cephalo.qzv
 ```
+I visualise it using [evaluatealphararechordates.R](evaluatealphararechordates.R]) from the downloaded csv out of  alpharare100chordates.qzv
 
+*Legend*:Alpha rarefaction curves for ray-finned fishes. 175 samples with more than 3000 ray-finned fishes reads were randomly sampled for different number of sequences. The y-axis represents the average percentage of the total number of independent type of sequences (i.e. QIIME 2 features) within each sample detected at each depth. The error bars represent the .
+
+![output/sampled_alpha_chordates.png](output/sampled_alpha_chordates.png)
 
 I exclude all samples that have below 2000 reads for chordates. 
 
@@ -75,6 +79,7 @@ qiime taxa barplot \
 ```
 
 
+##Cephalopods 
 
 Cephalopods are trickier because the primers are not very specific and there are less sequences in general. We cannot filter them asking for that many sequences.
 

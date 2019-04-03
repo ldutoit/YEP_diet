@@ -26,7 +26,7 @@ cat actinopterygii.fasta metazoa16S.fasta cephalopoda.fasta cnidaria.fasta cepha
 
 ### Create database format for qiime to import
 
-I used the tool [entrez qiime] (https://github.com/bakerccm/entrez_qiime) (python2.7, accessed december 2018). I followed the pdf tutorial.
+I used the tool [entrez qiime2] (https://github.com/bakerccm/entrez_qiime) (python2.7, accessed december 2018). I followed the pdf tutorial.
 
 
 ```
@@ -48,7 +48,7 @@ That way every record is matched to a taxonomy in qiime2 standard format.
 ### Create classifier
 
 
-Ce create the classifier according to
+Re create the classifier according to
 https://docs.qiime2.org/2018.11/tutorials/feature-classifier/
 ```
 qiime tools import \
@@ -165,7 +165,7 @@ qiime feature-classifier fit-classifier-naive-bayes \
   --o-classifier classifierchor.qza
 ```
 ### Cephalo
-Cephalopods do not have extra sequences.
+Cephalopods do not have extra sequences added.
 
 ```
 
