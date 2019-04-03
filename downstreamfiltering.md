@@ -1,6 +1,6 @@
 I still kept the dataset separated for the two different primer pairs.
 
-#Step 1: Remove non-targeted taxa
+# Step 1: Remove non-targeted taxa
 
 I remove all data that is from non-targeted species as well as any taxa that does not reach 100 reads across all the samples.
 
@@ -79,7 +79,7 @@ qiime taxa barplot \
 ```
 
 
-##Cephalopods 
+## Cephalopods 
 
 Cephalopods are trickier because the primers are not very specific and there are less sequences in general. We cannot filter them asking for that many sequences.
 
