@@ -205,9 +205,10 @@ Opalfish_OPA_25/6/16_MelFish_6_16S_cluster1	Chordata;Actinopteri;Percophidae;Hem
 H._morelandi_17/4__MelFish9_16S_cluster2	Chordata;Actinopteri;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus2
 Hartus_Heme_1_Dec_17__MelFish1616SS_cluster4	Chordata;Actinopteri;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus4
 Deepsea_Pigfish_19/6/19_MElFish3_16S	Chordata;Actinopterygi;Scorpaeniformes;Congiopodidae;Congiopodus;Congiopodus coriaceus (homeseq)
-Sandfish_19/6/19_MelFish2_16S ??????
+Sandfish_19/6/19_MelFish2_16S Chordata;Actinopterygii;Gonorynchiformes;Gonorynchidae;Gonorynchus;Gonorynchus Gonorynchus
 Southern_Pigfish_MelFish1_16S	Chordata;Actinopterygi;Scorpaeniformes;Congiopodidae;Congiopodus;Congiopodus leucopaecilus (homeseq)
 ```
+
 ```
 #reimport taxonomy
 
