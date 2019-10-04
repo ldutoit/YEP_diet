@@ -110,7 +110,7 @@ for chordates, we want to be able to add a few local sequences of important spec
 ```
 # we export the one we have so far from the qiime object
 qiime tools export --input-path  ref-seqschor.qza  --output-path ref-seqschor
-cp ref-seqschor/dna-sequences.fasta > ref-seqschor.fa
+cp ref-seqschor/dna-sequences.fasta  ref-seqschor.fa
 # add those seqs to
  echo ">Auchenoceros_punctatus
 TTAGACTTAAAATAAATTGCACTCTCATATTACTTACCCAATTAAATTCAGCAAATAAATATTGAAATGTCTTTG
@@ -186,7 +186,7 @@ CCAGACAAGGGGCCAAACCAAATGATCCCTGCC" > extraseq2.fa
 ```
 
 ``` 
-cat extrase2q.fa ref-seqschorwithextra.fa  > ref-seqschorwithextra2.fa
+cat extraseq2.fa ref-seqschorwithextra.fa  > ref-seqschorwithextra2.fa
 ```
 
 and then I add  the taxonomy to beginning of allrecordsncbi_accession.txt (tab separated two columns):
@@ -229,7 +229,7 @@ Cephalopods do not have extra sequences.
 ```
 qiime tools import \
   --type 'FeatureData[Sequence]' \
-  --input-path ref-seqschorwithextra.fa \
+  --input-path ref-seqschorwithextra2.fa \
   --output-path allrecordsncbi_clippedchor.qza
 
 qiime feature-classifier fit-classifier-naive-bayes \
