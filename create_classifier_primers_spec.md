@@ -223,7 +223,9 @@ Cephalopods do not have extra sequences.
 
 ## IMPORT and train
 
-
+```
+export TMPDIR=/nesi/nobackup/uoo00116/tmp_QIIME2
+ ```
 ### Chordates
 
 ```
