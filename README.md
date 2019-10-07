@@ -86,6 +86,11 @@ We outputted:
 *This has not been edited after adding opalfishes*
 We compared the list of records to the species presnece in our databases using [specieslist_vs_database_primer_spec.py](specieslist_vs_database_primer_spec.py) and a bit of manual editing to produce the file: [metadata/database_completedness.csv](metadata/database_completedness.csv)
 
+<<<<<<< HEAD
+
+**FOR MEL downstream filtering**
+=======
 ## Extra figure:
 
 plot_table.png
+>>>>>>> 9045bcef0b924a42e813d88ed5a6b9e1a7a3f51a
