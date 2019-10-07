@@ -94,7 +94,7 @@ and then  I can finally assign stuff!
 
 
 ```
-qiime feature-classifier classify-sklearn \
+c \
   --i-classifier taxo_primerspec/classifierceph.qza \
   --i-reads  rep-seqs-dada2cephalo.qza \
   --o-classification taxonomy_cephalo.qza
