@@ -1,4 +1,4 @@
-#create_classifier_primers_spec.md
+# create_classifier_primers_spec.md
 
 This file creates two classifiers, those are primers specific.
 
@@ -110,16 +110,16 @@ for chordates, we want to be able to add a few local sequences of important spec
 ```
 # we export the one we have so far from the qiime object
 qiime tools export --input-path  ref-seqschor.qza  --output-path ref-seqschor
-cp ref-seqschor/dna-sequences.fasta > ref-seqschor.fa
+cp ref-seqschor/dna-sequences.fasta  ref-seqschor.fa
 # add those seqs to
  echo ">Auchenoceros_punctatus
 TTAGACTTAAAATAAATTGCACTCTCATATTACTTACCCAATTAAATTCAGCAAATAAATATTGAAATGTCTTTG
 >Bluecodconsensus_sequence
 TTAGACACGAAGACAGCTCACCCCCCTTCCCCCTTCAGAAAAGGGCCAAATTAAGTGACCCTGCCCTAATGTCTTTG
-AGAACCTCTGACTAAAAATGATCCGGCAAAGCCGATCAACGGACCGAGTTACCCT
 >Silverside_consensus_sequence
 TTAGACAAAAGGTAGACCACGTTTAACCCCCCTCCCTAACAGGACTAAACACAGTGCTCCCCTAACCTATATGTCTTTG" > extraseq.fa
 ```
+I shortened blue cod reference after revision when noticing it was not clipped properly to the primers
 
 and those to beginning of allrecordsncbi_accession.txt:
 
@@ -135,6 +135,79 @@ Bluecodconsensus_sequence Chordata;Actinopteri; Trachiniformes;Pinguipedidae;Par
 Silverside_consensus_sequence Chordata;Actinopteri;Argentiniformes;Argentinidae;Argentina;Argentina elongata
 ```
 
+NOTE: I now have eveb more data from opalfish and deepsea pigfish. I clipped them and removed *Opalfish_OPA_2/7/16_MelFish_5_16S*  which was really weird
+
+```
+echo ">H._morelandi_HMO_01_MelFish8_16S_cluster2
+TTAGGCACTAAAGCAGCCCCTGTTGCCCCCCG
+GGGACTATGAGGGGCCCTGCTTTAATTACCTTCG
+>H._artus_01_1/12/17_MelFish13_16SS_cluster3
+TTAGGCACTAAAGCAGCCCCTCTTGCCCC
+TCGGGGACTACGAGGGGCCCTGCTTTAATTACCTTCG
+>H._artus_03_1_Dec_17_MelFish15_16S_cluster2
+TTAGGCACTAAAGCAGCCCCTGTTGCCCCCCG
+GGGACTATGAGGGGCCCTGCTTTAATTACCTTCG
+>Opalfish_OPA_24/6/16_MelFish_4_16S_cluster1
+TTAGGCACTAAAGCAGCCCCTGCTGCCTCCCT
+TTCGGACTATAAGGGGACCTGCTTTAATTACCTTCG
+>H_pauciradiatus_Opalfish_31/7/14_MelFish10S_cluster3
+TTAGGCACTAAAGCAGCCCCTCTTGCCCCTCG
+GGGACTACGAGGGGCCCTGCTTTAATTACCTTCG
+>H._artus_17.10_9/12/17_MelFish11_16SS_cluster4
+TTAGGCACTAAAGCAGCCCCTGTTGCCCTCAC
+CCAGGGACTATAAGGGGCCCTGCTTTAATTACCTTCG
+>H._morelandi_17/2_21g_MelFish7_16S_cluster2
+TTAGGCACTAAAGCAGCCCCTGTTGCCCCCCG
+GGGACTATGAGGGGCCCTGCTTTAATTACCTTCG
+>Southern_Pigfish_MelFish1_16S 
+TTAGACACCAAGGCAGATCATGTTAAACACCC
+CCAGACAAGGGGCCAAACCAAATGATCCCTGCC
+>Hemerocoetes_1_Dec_17_5.97g_MelFish14_16S_cluster3
+TTAGGCACTAAAGCAGCCCCTCTTGCCCCTCG
+GGGACTACGAGGGGCCCTGCTTTAATTACCTTCG
+>Sandfish_19/6/19_MelFish2_16S
+TAAGACATAAGGCCAACCACGTTAAACAGCTC
+ACTAAGGATAAGAACGATATGGTAAACCTTGG
+>H._artus_17.15_9/12/17_MelFish12_16S_cluster3
+TTAGGCACTAAAGCAGCCCCTCTTGCCCCTCG
+GGGACTACGAGGGGCCCTGCTTTAATTACCTTCG
+>Opalfish_OPA_25/6/16_MelFish_6_16S_cluster1
+TTAGGCACTAAAGCAGCCCCTGCTGCCTCCCT
+TTCGGACTATAAGGGGACCTGCTTTAATTACCTTCG
+>H._morelandi_17/4__MelFish9_16S_cluster2
+TTAGGCACTAAAGCAGCCCCTGTTGCCCCCCG
+GGGACTATGAGGGGCCCTGCTTTAATTACCTTCG
+>Hartus_Heme_1_Dec_17__MelFish1616SS_cluster4
+TTAGGCACTAAAGCAGCCCCTGTTGCCCTCAC
+CCAGGGACTATAAGGGGCCCTGCTTTAATTACCTTCG
+>Deepsea_Pigfish_19/6/19_MElFish3_16S
+TTAGACACCAAGGCAGATCATGTTAAACACCC
+CCAGACAAGGGGCCAAACCAAATGATCCCTGCC" > extraseq2.fa
+```
+
+``` 
+cat extraseq2.fa ref-seqschorwithextra.fa  > ref-seqschorwithextra2.fa
+```
+
+and then I add  the taxonomy to beginning of allrecordsncbi_accession.txt (tab separated two columns):
+
+```
+H._morelandi_HMO_01_MelFish8_16S_cluster2	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus2
+H._artus_01_1/12/17_MelFish13_16SS_cluster3	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus3
+H._artus_03_1_Dec_17_MelFish15_16S_cluster2	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus2
+Opalfish_OPA_24/6/16_MelFish_4_16S_cluster1	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus1
+H_pauciradiatus_Opalfish_31/7/14_MelFish10S_cluster3	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus3
+H._artus_17.10_9/12/17_MelFish11_16SS_cluster4	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus4
+H._morelandi_17/2_21g_MelFish7_16S_cluster2	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus2
+Hemerocoetes_1_Dec_17_5.97g_MelFish14_16S_cluster3	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus3
+H._artus_17.15_9/12/17_MelFish12_16S_cluster3	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus3
+Opalfish_OPA_25/6/16_MelFish_6_16S_cluster1	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus1
+H._morelandi_17/4__MelFish9_16S_cluster2	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus2
+Hartus_Heme_1_Dec_17__MelFish1616SS_cluster4	Chordata;Actinopteri;Trachiniformes;Percophidae;Hemerocoetes;Hemerocoetes homeseqclus4
+Deepsea_Pigfish_19/6/19_MElFish3_16S	Chordata;Actinopteri;Scorpaeniformes;Congiopodidae;Congiopodus;Congiopodus coriaceus (homeseq)
+Sandfish_19/6/19_MelFish2_16S Chordata;Actinopteri;Gonorynchiformes;Gonorynchidae;Gonorynchus;Gonorynchus Gonorynchus
+Southern_Pigfish_MelFish1_16S	Chordata;Actinopteri;Scorpaeniformes;Congiopodidae;Congiopodus;Congiopodus leucopaecilus (homeseq)
+```
 
 ```
 #reimport taxonomy
@@ -150,13 +223,15 @@ Cephalopods do not have extra sequences.
 
 ## IMPORT and train
 
-
+```
+export TMPDIR=/nesi/nobackup/uoo00116/tmp_QIIME2
+ ```
 ### Chordates
 
 ```
 qiime tools import \
   --type 'FeatureData[Sequence]' \
-  --input-path ref-seqschorwithextra.fa \
+  --input-path ref-seqschorwithextra2.fa \
   --output-path allrecordsncbi_clippedchor.qza
 
 qiime feature-classifier fit-classifier-naive-bayes \
