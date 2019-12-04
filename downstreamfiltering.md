@@ -52,7 +52,7 @@ qiime diversity alpha-rarefaction \
   --m-metadata-file  ~/repos/scripts/YEP_diet/metadata/sample_metadatarare.tsv \
   --o-visualization alpharare50cephalo.qzv
 ```
-I visualise it using [evaluatealphararechordates.R](evaluatealphararechordates.R]) from the downloaded csv out of  alpharare100chordates.qzv
+I visualise it using [evaluatealphararechordates.R](evaluatealphararechordates.R]) from the downloaded csv out of  alpharare100chordates.qzv ass observed_otus.csv.
 
 *Legend*:Alpha rarefaction curves for ray-finned fishes. 175 samples with more than 3000 ray-finned fishes reads were randomly sampled for different number of sequences. The y-axis represents the average percentage of the total number of independent type of sequences (i.e. QIIME 2 features) within each sample detected at each depth. The error bars represent the .
 
@@ -160,6 +160,6 @@ all[all%in%indataset==FALSE]
 
 I add them with 0s only to the final cephalopod dataset derived at level 6 and called this: cephalolevel6.csv ( with no metadata)
 
-I then add the metadata using *addmeadatatofinal table.R* and save it as al_table_cephalo.csv
+I then add the metadata using *addmeadatatofinal table.R* and save it as final_table_cephalo.csv
 
 

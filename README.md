@@ -16,12 +16,23 @@ For now, the raw data is on the Robertson lab HCS storage  at otago uni:
 
 /home/ludovic.dutoit/projectsmb://storage.hcs-p01.otago.ac.nz/sci-zoology-kakapogenome/Ludo/YEP_poo_16S_eDNAs/
 
-## Output files:
+The processed and archive data is stored on : ...
 
-*to come*
 
-Methods.txt
-Input
+## Output files
+
+Those files are in the output folder and are to be archived with the manuscript:
+
+
+[cephalo_proportion_tables.txt](output/cephalo_proportion_tables.txt) contains the broad classification of sequences into target and non target species for cephalopods sequences.
+
+[chordates_proportion_tables.txt](output/chordates_proportion_tables.txt) contains the broad classification of sequences into target and non target species for chordates sequences.
+[final_table_cephalo.csv](output/final_table_cephalo.csv) Contains the taxonomically assigned cephalo dataset
+[final_table_chordates.csv](output/final_table_chordates.csv) Contains the taxonomically assigned chordates dataset
+[taxonomy_cephalo.qzv](output/taxonomy_cephalo.qzv) match unique sequences to taxonomy with confidence score
+[taxonomy_chordates.qzv](output/taxonomy_chordates.qzv) match unique sequences to taxonomy with confidence score
+[sampled_alpha_chordates.png](output/sampled_alpha_chordates.png) figure S2 for alpha rarefaction
+[observed_otus.csv](output/observed_otus.csv) raw data for alpha rarefaction plot
 
 ## Source files
 the original data consists of 16S samples for 220 penguins. 1 is metagenomic data. The other 219 are 16S amplicon sequenced with 2 pairs of primers, one to amplify a cephalopod 16S fragment and one to amplify a fish 16S fragment.
@@ -83,14 +94,12 @@ We outputted:
 
 
 ## completeness of database
-*This has not been edited after adding opalfishes*
-We compared the list of records to the species presnece in our databases using [specieslist_vs_database_primer_spec.py](specieslist_vs_database_primer_spec.py) and a bit of manual editing to produce the file: [metadata/database_completedness.csv](metadata/database_completedness.csv)
+*This has not been edited after adding opalfishes, so the opalfish have been updates*
+We compared the list of records to the species presnece in our databases using [specieslist_vs_database_primer_spec.py](specieslist_vs_database_primer_spec.py) and a bit of manual editing to produce the file: [metadata/database_completedness.csv](metadata/database_completedness.csv). 
 
-<<<<<<< HEAD
 
-**FOR MEL downstream filtering**
-=======
-## Extra figure:
+## Alpha rarefaction
 
-plot_table.png
->>>>>>> 9045bcef0b924a42e813d88ed5a6b9e1a7a3f51a
+It is done within downstreamfiltering.md using a downloaded alpha rarefaction qzv file into the script evaluatealphararechordates.R
+
+
