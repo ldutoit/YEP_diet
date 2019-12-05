@@ -4,19 +4,22 @@
 dict_taxo={taxa.split()[0]:" ".join(taxa.split()[1:]) for taxa in open("allrecordsncbi_accession.txt")}
 
 act_species = []
-with open("ref-seqschorwithextra.fa") as f:
+with open("ref-seqschorwithextra2.fa") as f:
 	for line in f:
 		if line.startswith(">"):
 			code = line.strip().split(" ")[0][1:]
-			if "Actinopteri" in dict_taxo[code]  and " "  in dict_taxo[code] and not "sp." in dict_taxo[code]:
+			if "Actinopteri" in dict_taxo[code]  and " "  in dict_taxo[code] and not "sp." in dict_taxo[code] and not "homeseqclus" in dict_taxo[code]:
 				act_species.append(" ".join(dict_taxo[code].split(" ")[:3]))
 
 print (len(set(act_species))) 
-#9828 species
+#9835 species 
+##We need to the two species of opalfish that were avoided nbecause they were many different clusters exluded at line 1 and not "homeseqclus" in dict_taxo[code]
+
+This after checking because we got 3 more genuses and 2 more 
 
 act_genuses = [x.split(";")[-2] for x in act_species]
 print (len(set(act_genuses))) 
-#3190 	
+#3190 	#3191 with opalfish
 
 
 
