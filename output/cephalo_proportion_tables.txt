@@ -1,107 +1,108 @@
-sample.id	total	Hohio	targetcephalopoda_sequences	othernontarget	Date	Samplequality	Breedingregion	Breedinglocation	Nestnumber	IndividualID	Ageclass	Statusof_bird1617	Time	Sex
-S100	2213	0	25	2188	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S101	4490	0	0	4490	12/05/17	Fresh	Otago_Peninsula	Otapahi	NA	982000405533774	Adult	Non-breeding	Post-moult	M
-S103	4965	202	31	4732	10/12/16	Latrine	Catlins	Penguin_Bay	SQP7	NA	Chick	Breeding	Guard	U
-S104	2715	13	0	2702	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S105	3339	0	0	3339	21/04/17	Latrine	North_Otago	Bobby's_Head	NA	NA	Adult	Unknown	Post-moult	U
-S106	17788	353	53	17382	8/12/16	Latrine	Catlins	Long_Point	MY14	NA	Chick	Breeding	Guard	U
-S107	6293	40	0	6253	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S108	12264	0	103	12161	18/04/17	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Adult	Unknown	Post-moult	U
-S11	6715	0	0	6715	26/04/17	Fresh	Otago_Peninsula	Aramoana	BA1	982000056093670	Adult	Breeding	Post-moult	F
-S111	9620	315	350	8955	22/04/17	Fresh	Otago_Peninsula	Aramoana	NA	19831	Adult	Non-breeding	Post-moult	M
-S112	7505	0	18	7487	26/11/16	Fresh	Otago_Peninsula	Highcliff	MY4	20217	Adult	Breeding	Guard	F
-S113	2666	110	128	2428	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S114	10290	256	0	10034	22/02/17	Fresh	Otago_Peninsula	Otapahi	OT4	982000063621423	Adult	Breeding	Pre-moult	M
-S115	18336	280	9	18047	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S116	19545	358	22	19165	26/04/17	Fresh	Otago_Peninsula	Aramoana	NA	982000405533966	Adult	Non-breeding	Post-moult	M
-S117	15831	2977	18	12836	28/04/17	Fresh	Otago_Peninsula	Aramoana	NA	982000405533676	Adult	Non-breeding	Post-moult	M
-S119	5732	42	154	5536	26/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Adult	Breeding	Guard	U
-S12	4516	0	0	4516	20/02/17	Fresh	Otago_Peninsula	Otapahi	OT4	982000063621423	Adult	Breeding	Pre-moult	M
-S120	8699	58	11	8630	20/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Adult	Breeding	Guard	U
-S121	5798	13	187	5598	17/07/17	Latrine	Otago_Peninsula	Otapahi	OT1	19725	Adult	Breeding	Post-moult	M
-S125	2675	28	272	2375	29/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Adult	Breeding	Guard	U
-S128	5781	0	0	5781	10/12/16	Latrine	Catlins	Nugget_Point	SQP2	NA	Adult	Breeding	Guard	U
-S13	2527	0	0	2527	31/01/17	Fresh	Catlins	Nugget_Point	BB4	NA	Adult	Breeding	Post-guard	U
-S134	5514	0	16	5498	9/11/16	Latrine	Otago_Peninsula	Otapahi	OT3	NA	Adult	Breeding	Guard	U
-S136	5372	59	106	5207	6/06/17	Fresh	Catlins	Nugget_Point	BB4	982000402100702	Adult	Breeding	Post-moult	M
-S137	9405	0	19	9386	6/06/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Post-moult	U
-S138	5301	28	44	5229	17/06/17	Fresh	Catlins	Hina_Hina_Cove	NA	982000405533014	Adult	Non-breeding	Post-moult	M
-S14	2526	0	14	2512	8/02/17	Fresh	Catlins	Long_Point	MY13	NA	Chick	Breeding	Post-guard	U
-S141	2443	34	0	2409	9/11/16	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Adult	Breeding	Guard	U
-S146	3675	0	30	3645	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT3	NA	Adult	Breeding	Guard	U
-S147	3767	0	0	3767	17/11/16	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Adult	Breeding	Guard	U
-S149	3687	8	0	3679	21/11/16	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Adult	Breeding	Guard	U
-S151	9693	0	30	9663	8/06/17	Latrine	Catlins	Long_Point	MY10	NA	Adult	Breeding	Post-moult	U
-S153	2226	0	118	2108	8/06/17	Latrine	Catlins	Long_Point	MY10	NA	Adult	Breeding	Post-moult	U
-S155	5855	0	87	5768	13/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Adult	Breeding	Guard	U
-S162	14983	216	0	14767	17/11/16	Latrine	Otago_Peninsula	Otapahi	OT6	NA	Chick	Breeding	Guard	U
-S164	3797	0	1970	1827	18/11/16	Latrine	Catlins	Penguin_Bay	RR5	NA	Chick	Breeding	Guard	U
-S169	5844	172	0	5672	10/12/16	Latrine	Catlins	Nugget_Point	SQP2	NA	Chick	Breeding	Post-guard	U
-S170	3510	0	0	3510	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S173	2801	0	13	2788	10/12/16	Latrine	Catlins	Hina_Hina_Cove	EE7	NA	Chick	Breeding	Post-guard	U
-S176	2267	0	0	2267	17/11/16	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Chick	Breeding	Guard	U
-S177	3458	0	18	3440	13/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Chick	Breeding	Guard	U
-S178	2842	0	0	2842	26/01/17	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Post-guard	U
-S18	9557	0	203	9354	20/02/17	Fresh	Otago_Peninsula	Otapahi	OT3	19893	Adult	Breeding	Pre-moult	M
-S183	11358	0	108	11250	10/12/16	Latrine	Catlins	Penguin_Bay	BB7	NA	Chick	Breeding	Post-guard	U
-S184	3083	9	36	3038	26/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Chick	Breeding	Guard	U
-S187	2345	44	38	2263	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT6	NA	Chick	Breeding	Post-guard	U
-S189	8998	0	0	8998	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S19	2771	307	0	2464	8/02/17	Fresh	Catlins	Long_Point	MY12	NA	Chick	Breeding	Post-guard	U
-S190	2485	25	0	2460	8/07/17	Latrine	Catlins	Penguin_Bay	NA	NA	Adult	Unknown	Post-moult	U
-S193	2608	221	0	2387	18/12/16	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Post-guard	U
-S194	5845	52	0	5793	8/12/16	Latrine	Catlins	Long_Point	MY13	NA	Chick	Breeding	Post-guard	U
-S195	6939	100	34	6805	19/12/16	Latrine	Catlins	Penguin_Bay	BB7	NA	Chick	Breeding	Post-guard	U
-S197	6802	24	0	6778	1/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Chick	Breeding	Guard	U
-S198	2317	0	14	2303	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT3	NA	Chick	Breeding	Guard	U
-S199	2455	30	53	2372	19/12/16	Latrine	Catlins	Hina_Hina_Cove	BB5	NA	Chick	Breeding	Post-guard	U
-S2	2117	0	0	2117	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S20	231629	1041	41	230547	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S200	8009	0	0	8009	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S201	7234	91	73	7070	8/12/16	Latrine	Catlins	Long_Point	MY16	NA	Chick	Breeding	Post-guard	U
-S202	2222	79	71	2072	19/12/16	Latrine	Catlins	Penguin_Bay	MEL1	NA	Chick	Breeding	Post-guard	U
-S203	3149	0	0	3149	21/11/16	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Chick	Breeding	Guard	U
-S205	2252	0	0	2252	26/01/17	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Chick	Breeding	Post-guard	U
-S206	11619	293	139	11187	17/11/16	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Guard	U
-S209	14273	29	1832	12412	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S217	6129	0	0	6129	16/08/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S219	8679	0	0	8679	16/08/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S220	2078	14	28	2036	16/08/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S24	8241	197	0	8044	26/01/17	Fresh	Otago_Peninsula	Otapahi	OT3	NA	Chick	Breeding	Post-guard	U
-S25	2300	0	15	2285	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S28	10875	0	0	10875	16/03/17	Fresh	Catlins	Long_Point	NA	982000063621154	Adult	Non-breeding	Post-moult	M
-S3	2246	0	0	2246	20/04/17	Fresh	North_Otago	Bobby's_Head	NA	982000405533753	Adult	Non-breeding	Post-moult	M
-S30	11021	0	0	11021	16/02/17	Fresh	Otago_Peninsula	Otapahi	OT3	NA	Chick	Breeding	Post-guard	U
-S32	2915	0	0	2915	8/05/17	Fresh	Otago_Peninsula	Victory_Beach	NA	982000405534107	Adult	Non-breeding	Post-moult	M
-S33	7152	0	0	7152	18/05/17	Fresh	Otago_Peninsula	Otapahi	NA	982000063621691	Adult	Non-breeder	Post-moult	F
-S44	5883	0	0	5883	27/05/17	Fresh	North_Otago	Bushy_Beach	NA	982000405533525	Adult	Non-breeding	Post-moult	M
-S49	4078	0	0	4078	13/11/16	Latrine	Otago_Peninsula	Aramoana	MY2	NA	Adult	Breeding	Guard	U
-S5	2655	0	22	2633	2/02/17	Fresh	Catlins	Hina_Hina_Cove	NA	982000033464096	Adult	Non-breeding	Pre-moult	M
-S56	6159	22	0	6137	18/06/17	Fresh	Catlins	Penguin_Bay	RR5	982000365999698	Adult	Breeding	Post-moult	F
-S57	4246	0	0	4246	1/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Adult	Breeding	Incubation	U
-S6	11505	0	159	11346	1/02/17	Fresh	Catlins	Penguin_Bay	MEL1	NA	Chick	Breeding	Post-guard	U
-S60	3055	7	0	3048	11/12/16	Latrine	Otago_Peninsula	Sandymount	JW1	NA	Adult	Breeding	Guard	U
-S69	4420	21	2725	1674	12/11/16	Latrine	Catlins	Penguin_Bay	SQP6	NA	Chick	Breeding	Guard	U
-S7	2461	0	0	2461	19/04/17	Latrine	North_Otago	Okahau_Point	NA	NA	Adult	Unknown	Post-moult	U
-S71	5406	288	0	5118	17/12/16	Latrine	Catlins	Long_Point	MY13	NA	Chick	Breeding	Post-guard	U
-S72	3316	0	0	3316	19/12/16	Latrine	Catlins	Penguin_Bay	SQP5	NA	Chick	Breeding	Post-guard	U
-S74	17403	758	0	16645	18/12/16	Latrine	Otago_Peninsula	Otapahi	OT6	NA	Chick	Breeding	Post-guard	U
-S76	2714	0	0	2714	17/12/16	Latrine	Catlins	Long_Point	MY14	NA	Chick	Breeding	Post-guard	U
-S77	6292	0	52	6240	18/12/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Chick	Breeding	Guard	U
-S8	3152	0	0	3152	18/05/17	Fresh	Otago_Peninsula	Otapahi	OT3	19893	Adult	Breeding	Post-moult	M
-S80	5190	34	330	4826	28/11/16	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Guard	U
-S81	11104	2010	351	8743	11/12/16	Latrine	Otago_Peninsula	Sandymount	JW2	NA	Chick	Breeding	Post-guard	U
-S82	5652	0	0	5652	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S83	2129	0	34	2095	26/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Chick	Breeding	Guard	U
-S85	2106	93	139	1874	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Chick	Breeding	Post-guard	U
-S86	110081	93	0	109988	11/12/16	Latrine	Otago_Peninsula	Sandymount	JW1	NA	Chick	Breeding	Post-guard	U
-S87	6655	0	0	6655	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U
-S88	7880	5338	0	2542	10/12/16	Latrine	Catlins	Penguin_Bay	SQP5	NA	Chick	Breeding	Post-guard	U
-S9	2378	0	0	2378	18/05/17	Fresh	Otago_Peninsula	Otapahi	OT4	982000063621423	Adult	Breeding	Post-moult	M
-S93	2225	0	0	2225	16/02/17	Fresh	Otago_Peninsula	O	OT3	NA	Chick	Breeding	Post-guard	U
-S94	7503	0	35	7468	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U
-S95	16405	0	0	16405	18/02/17	Fresh	Otago_Peninsula	Aramoana	MY2	982000365942048	Adult	Breeding	Pre-moult	M
-S96	7481	17	30	7434	25/04/17	Latrine	Otago_Peninsula	Aramoana	NA	19831	Adult	Non-breeding	Post-moult	M
-S97	6189	0	106	6083	19/04/17	Latrine	North_Otago	Okahau_Point	NA	NA	Adult	Unknown	Post-moult	U
-S98	2237	0	0	2237	27/01/17	Fresh	Otago_Peninsula	Double_Bay	TT6	NA	Chick	Breeding	Post-guard	U
-S99	3038	40	0	2998	10/12/16	Latrine	Catlins	Nugget_Point	RR3	NA	Chick	Breeding	Guard	U
+sample.id	total	Hoiho	target	othernontarget	Date	Samplequality	Breedingregion	Breedinglocation	Nestnumber	IndividualID	Ageclass	Statusof_bird1617	Time	Sex	identified	%identified
+S100	2192	0	14	2178	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	14	100
+S101	4475	0	0	4475	12/05/17	Fresh	Otago_Peninsula	Otapahi	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	0	NA
+S103	4965	202	31	4732	10/12/16	Latrine	Catlins	Penguin_Bay	SQP7	NA	Chick	Breeding	Guard	U	0	0
+S104	2679	13	0	2666	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	0	NA
+S105	3339	0	0	3339	21/04/17	Latrine	North_Otago	Bobby's_Head	NA	NA	Adult	Unknown	Post-moult	U	0	NA
+S106	17378	353	20	17005	8/12/16	Latrine	Catlins	Long_Point	MY14	NA	Chick	Breeding	Guard	U	20	100
+S107	6280	40	0	6240	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	0	NA
+S108	12244	0	103	12141	18/04/17	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Adult	Unknown	Post-moult	U	103	100
+S11	6715	0	0	6715	26/04/17	Fresh	Otago_Peninsula	Aramoana	BA1	9.82E+14	Adult	Breeding	Post-moult	F	0	NA
+S111	9604	315	350	8939	22/04/17	Fresh	Otago_Peninsula	Aramoana	NA	19831	Adult	Non-breeding	Post-moult	M	350	100
+S112	7495	0	18	7477	26/11/16	Fresh	Otago_Peninsula	Highcliff	MY4	20217	Adult	Breeding	Guard	F	18	100
+S113	2544	110	128	2306	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	128	100
+S114	10075	256	0	9819	22/02/17	Fresh	Otago_Peninsula	Otapahi	OT4	9.82E+14	Adult	Breeding	Pre-moult	M	0	NA
+S115	18327	280	0	18047	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	0	NA
+S116	19430	358	0	19072	26/04/17	Fresh	Otago_Peninsula	Aramoana	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	0	NA
+S117	15638	2977	18	12643	28/04/17	Fresh	Otago_Peninsula	Aramoana	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	18	100
+S119	5713	42	154	5517	26/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Adult	Breeding	Guard	U	154	100
+S12	4516	0	0	4516	20/02/17	Fresh	Otago_Peninsula	Otapahi	OT4	9.82E+14	Adult	Breeding	Pre-moult	M	0	NA
+S120	8699	58	11	8630	20/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Adult	Breeding	Guard	U	11	100
+S121	5798	13	187	5598	17/07/17	Latrine	Otago_Peninsula	Otapahi	OT1	19725	Adult	Breeding	Post-moult	M	0	0
+S125	2675	28	272	2375	29/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Adult	Breeding	Guard	U	272	100
+S128	5781	0	0	5781	10/12/16	Latrine	Catlins	Nugget_Point	SQP2	NA	Adult	Breeding	Guard	U	0	NA
+S13	2527	0	0	2527	31/01/17	Fresh	Catlins	Nugget_Point	BB4	NA	Adult	Breeding	Post-guard	U	0	NA
+S134	5430	0	16	5414	9/11/16	Latrine	Otago_Peninsula	Otapahi	OT3	NA	Adult	Breeding	Guard	U	16	100
+S136	5314	59	106	5149	6/06/17	Fresh	Catlins	Nugget_Point	BB4	9.82E+14	Adult	Breeding	Post-moult	M	106	100
+S137	9387	0	19	9368	6/06/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Post-moult	U	19	100
+S138	5239	0	44	5195	17/06/17	Fresh	Catlins	Hina_Hina_Cove	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	44	100
+S14	2506	0	0	2506	8/02/17	Fresh	Catlins	Long_Point	MY13	NA	Chick	Breeding	Post-guard	U	0	NA
+S141	2441	34	0	2407	9/11/16	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Adult	Breeding	Guard	U	0	NA
+S146	3667	0	30	3637	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT3	NA	Adult	Breeding	Guard	U	30	100
+S147	3728	0	0	3728	17/11/16	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Adult	Breeding	Guard	U	0	NA
+S149	3660	8	0	3652	21/11/16	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Adult	Breeding	Guard	U	0	NA
+S151	9570	0	30	9540	8/06/17	Latrine	Catlins	Long_Point	MY10	NA	Adult	Breeding	Post-moult	U	30	100
+S153	2202	0	118	2084	8/06/17	Latrine	Catlins	Long_Point	MY10	NA	Adult	Breeding	Post-moult	U	118	100
+S155	5855	0	87	5768	13/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Adult	Breeding	Guard	U	87	100
+S162	14951	216	0	14735	17/11/16	Latrine	Otago_Peninsula	Otapahi	OT6	NA	Chick	Breeding	Guard	U	0	NA
+S164	3724	0	1970	1754	18/11/16	Latrine	Catlins	Penguin_Bay	RR5	NA	Chick	Breeding	Guard	U	1970	100
+S169	5830	172	0	5658	10/12/16	Latrine	Catlins	Nugget_Point	SQP2	NA	Chick	Breeding	Post-guard	U	0	NA
+S170	3392	0	0	3392	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U	0	NA
+S173	2757	0	13	2744	10/12/16	Latrine	Catlins	Hina_Hina_Cove	EE7	NA	Chick	Breeding	Post-guard	U	0	0
+S176	2267	0	0	2267	17/11/16	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Chick	Breeding	Guard	U	0	NA
+S177	3413	0	18	3395	13/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Chick	Breeding	Guard	U	18	100
+S178	2811	0	0	2811	26/01/17	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Post-guard	U	0	NA
+S18	9503	0	203	9300	20/02/17	Fresh	Otago_Peninsula	Otapahi	OT3	19893	Adult	Breeding	Pre-moult	M	203	100
+S183	11342	0	108	11234	10/12/16	Latrine	Catlins	Penguin_Bay	BB7	NA	Chick	Breeding	Post-guard	U	108	100
+S184	3020	9	36	2975	26/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Chick	Breeding	Guard	U	36	100
+S187	2250	44	38	2168	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT6	NA	Chick	Breeding	Post-guard	U	38	100
+S189	8985	0	0	8985	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U	0	NA
+S19	2759	307	0	2452	8/02/17	Fresh	Catlins	Long_Point	MY12	NA	Chick	Breeding	Post-guard	U	0	NA
+S190	2360	25	0	2335	8/07/17	Latrine	Catlins	Penguin_Bay	NA	NA	Adult	Unknown	Post-moult	U	0	NA
+S193	2608	221	0	2387	18/12/16	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Post-guard	U	0	NA
+S194	5757	52	0	5705	8/12/16	Latrine	Catlins	Long_Point	MY13	NA	Chick	Breeding	Post-guard	U	0	NA
+S195	6824	100	34	6690	19/12/16	Latrine	Catlins	Penguin_Bay	BB7	NA	Chick	Breeding	Post-guard	U	34	100
+S197	6778	0	0	6778	1/11/16	Latrine	Otago_Peninsula	Aramoana	MY1	NA	Chick	Breeding	Guard	U	0	NA
+S198	2209	0	14	2195	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT3	NA	Chick	Breeding	Guard	U	14	100
+S199	2411	30	53	2328	19/12/16	Latrine	Catlins	Hina_Hina_Cove	BB5	NA	Chick	Breeding	Post-guard	U	53	100
+S2	2117	0	0	2117	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	0	NA
+S20	231535	1041	127	230367	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	41	32.28346457
+S200	7960	0	0	7960	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U	0	NA
+S201	7112	91	73	6948	8/12/16	Latrine	Catlins	Long_Point	MY16	NA	Chick	Breeding	Post-guard	U	73	100
+S202	2178	79	71	2028	19/12/16	Latrine	Catlins	Penguin_Bay	MEL1	NA	Chick	Breeding	Post-guard	U	71	100
+S203	3136	0	0	3136	21/11/16	Latrine	North_Otago	Bobby's_Head	TAV1	NA	Chick	Breeding	Guard	U	0	NA
+S205	2174	0	0	2174	26/01/17	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Chick	Breeding	Post-guard	U	0	NA
+S206	11582	293	139	11150	17/11/16	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Guard	U	92	66.18705036
+S209	14273	29	1832	12412	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U	1832	100
+S217	6097	0	0	6097	16/08/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Pre-egg	U	0	NA
+S219	8617	0	0	8617	16/08/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Pre-egg	U	0	NA
+S220	2071	14	28	2029	16/08/17	Latrine	Catlins	Nugget_Point	NA	NA	Adult	Unknown	Pre-egg	U	28	100
+S24	8241	197	0	8044	26/01/17	Fresh	Otago_Peninsula	Otapahi	OT3	NA	Chick	Breeding	Post-guard	U	0	NA
+S25	2300	0	15	2285	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	15	100
+S28	10825	0	0	10825	16/03/17	Fresh	Catlins	Long_Point	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	0	NA
+S3	2246	0	0	2246	20/04/17	Fresh	North_Otago	Bobby's_Head	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	0	NA
+S30	11021	0	0	11021	16/02/17	Fresh	Otago_Peninsula	Otapahi	OT3	NA	Chick	Breeding	Post-guard	U	0	NA
+S32	2897	0	0	2897	8/05/17	Fresh	Otago_Peninsula	Victory_Beach	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	0	NA
+S33	7122	0	0	7122	18/05/17	Fresh	Otago_Peninsula	Otapahi	NA	9.82E+14	Adult	Non-breeder	Post-moult	F	0	NA
+S44	5867	0	0	5867	27/05/17	Fresh	North_Otago	Bushy_Beach	NA	9.82E+14	Adult	Non-breeding	Post-moult	M	0	NA
+S49	4048	0	0	4048	13/11/16	Latrine	Otago_Peninsula	Aramoana	MY2	NA	Adult	Breeding	Guard	U	0	NA
+S5	2621	0	22	2599	2/02/17	Fresh	Catlins	Hina_Hina_Cove	NA	9.82E+14	Adult	Non-breeding	Pre-moult	M	22	100
+S56	6095	22	0	6073	18/06/17	Fresh	Catlins	Penguin_Bay	RR5	9.82E+14	Adult	Breeding	Post-moult	F	0	NA
+S57	4203	0	0	4203	1/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Adult	Breeding	Incubation	U	0	NA
+S6	11467	0	159	11308	1/02/17	Fresh	Catlins	Penguin_Bay	MEL1	NA	Chick	Breeding	Post-guard	U	159	100
+S60	3026	7	0	3019	11/12/16	Latrine	Otago_Peninsula	Sandymount	JW1	NA	Adult	Breeding	Guard	U	0	NA
+S69	4257	0	2725	1532	12/11/16	Latrine	Catlins	Penguin_Bay	SQP6	NA	Chick	Breeding	Guard	U	2725	100
+S7	2414	0	0	2414	19/04/17	Latrine	North_Otago	Okahau_Point	NA	NA	Adult	Unknown	Post-moult	U	0	NA
+S71	5406	288	0	5118	17/12/16	Latrine	Catlins	Long_Point	MY13	NA	Chick	Breeding	Post-guard	U	0	NA
+S72	3270	0	0	3270	19/12/16	Latrine	Catlins	Penguin_Bay	SQP5	NA	Chick	Breeding	Post-guard	U	0	NA
+S74	17225	758	0	16467	18/12/16	Latrine	Otago_Peninsula	Otapahi	OT6	NA	Chick	Breeding	Post-guard	U	0	NA
+S76	2714	0	0	2714	17/12/16	Latrine	Catlins	Long_Point	MY14	NA	Chick	Breeding	Post-guard	U	0	NA
+S77	6292	0	52	6240	18/12/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Chick	Breeding	Guard	U	52	100
+S8	3152	0	0	3152	18/05/17	Fresh	Otago_Peninsula	Otapahi	OT3	19893	Adult	Breeding	Post-moult	M	0	NA
+S80	5165	34	330	4801	28/11/16	Latrine	Otago_Peninsula	Otapahi	OT4	NA	Chick	Breeding	Guard	U	330	100
+S81	11104	2010	351	8743	11/12/16	Latrine	Otago_Peninsula	Sandymount	JW2	NA	Chick	Breeding	Post-guard	U	351	100
+S82	5636	0	0	5636	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U	0	NA
+S83	2097	0	34	2063	26/11/16	Latrine	North_Otago	Katiki_Point	KP93	NA	Chick	Breeding	Guard	U	34	100
+S85	2068	93	139	1836	11/12/16	Latrine	Otago_Peninsula	Otapahi	OT5	NA	Chick	Breeding	Post-guard	U	139	100
+S86	110041	93	0	109948	11/12/16	Latrine	Otago_Peninsula	Sandymount	JW1	NA	Chick	Breeding	Post-guard	U	0	NA
+S87	6613	0	0	6613	16/08/17	Latrine	Catlins	Long_Point	NA	NA	Adult	Unknown	Pre-egg	U	0	NA
+S88	7793	5338	0	2455	10/12/16	Latrine	Catlins	Penguin_Bay	SQP5	NA	Chick	Breeding	Post-guard	U	0	NA
+S9	2378	0	0	2378	18/05/17	Fresh	Otago_Peninsula	Otapahi	OT4	9.82E+14	Adult	Breeding	Post-moult	M	0	NA
+S93	2218	0	0	2218	16/02/17	Fresh	Otago_Peninsula	O	OT3	NA	Chick	Breeding	Post-guard	U	0	NA
+S94	7503	0	35	7468	19/04/17	Latrine	North_Otago	Katiki_Point	NA	NA	Adult	Unknown	Post-moult	U	35	100
+S95	16376	0	0	16376	18/02/17	Fresh	Otago_Peninsula	Aramoana	MY2	9.82E+14	Adult	Breeding	Pre-moult	M	0	NA
+S96	7448	0	30	7418	25/04/17	Latrine	Otago_Peninsula	Aramoana	NA	19831	Adult	Non-breeding	Post-moult	M	30	100
+S97	6189	0	106	6083	19/04/17	Latrine	North_Otago	Okahau_Point	NA	NA	Adult	Unknown	Post-moult	U	106	100
+S98	2233	0	0	2233	27/01/17	Fresh	Otago_Peninsula	Double_Bay	TT6	NA	Chick	Breeding	Post-guard	U	0	NA
+S99	3038	40	0	2998	10/12/16	Latrine	Catlins	Nugget_Point	RR3	NA	Chick	Breeding	Guard	U	0	NA
+total	967500	16749	10511	940240	4535463	0	0	0	0	1.6694E+16	0	0	0	0	10147	96.53696128
