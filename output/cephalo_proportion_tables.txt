@@ -105,4 +105,4 @@ S96	7448	0	30	7418	25/04/17	Latrine	Otago_Peninsula	Aramoana	NA	19831	Adult	Non-
 S97	6189	0	106	6083	19/04/17	Latrine	North_Otago	Okahau_Point	NA	NA	Adult	Unknown	Post-moult	U	106	100
 S98	2233	0	0	2233	27/01/17	Fresh	Otago_Peninsula	Double_Bay	TT6	NA	Chick	Breeding	Post-guard	U	0	NA
 S99	3038	40	0	2998	10/12/16	Latrine	Catlins	Nugget_Point	RR3	NA	Chick	Breeding	Guard	U	0	NA
-total	967500	16749	10511	940240	4535463	0	0	0	0	1.6694E+16	0	0	0	0	10147	96.53696128
+total	967500	16749	10511	940240	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10147	96.53696128
