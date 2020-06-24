@@ -76,8 +76,7 @@ qiime tools export --input-path rep-seqs-dada2cephalo.qza --output-path dna_sequ
 
 ### Feature classifier
 
-I need to create my own feature classifier in order to assign taxonomy to the features. This process is detailed in [create_classifiercehalo.md](create_classifiercephalo.md)
-
+I need to create my own feature classifier in order to assign taxonomy to the features. [create_classifier_primers_spec.md](create_classifier_primers_spec.md)
 
 Once I created my featureclassifier, I assign my features to features.
 
