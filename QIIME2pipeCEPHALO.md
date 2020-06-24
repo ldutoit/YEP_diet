@@ -1,7 +1,5 @@
 # QIIME2pipe.md
 
-**in construction**
-
 ### Summary
 
 ### import the data
