@@ -1,6 +1,5 @@
 # QIIME2pipe.md
 
-**in construction**
  
 ### Summary
 
@@ -21,12 +20,9 @@ qiime tools import \
 ```
 We can visualise the output by creating a visualisation file qzv:
 
-
 ```
 qiime demux summarize   --i-data paired-end-demuxchordates.qza   --o-visualization demuxchordates.qzv
 ```
-
-
 
 
 **Total Sequences Sampled**|**10000**
@@ -95,7 +91,7 @@ mkdir /home/ludovic.dutoit/projects/tmp
 export TMPDIR="/home/ludovic.dutoit/projects/tmp"
 ```
 
-and then  I can finally assign stuff!
+and then  I can finally assign the taxonomy!
 
 
 ```
@@ -116,4 +112,4 @@ qiime taxa barplot \
   --m-metadata-file ~/repos/scripts/YEP_diet/metadata/sample_metadata.tsv \
   --o-visualization taxa-bar-plotschordates.qzv
 ```
-
+This barplot can be visualised into qiime2. We then proceeded with the file [downstreamfiltering.md] that filters only Fishes from this dataset as well as deal with a minimum number of sequences.
