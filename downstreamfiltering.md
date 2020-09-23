@@ -18,7 +18,7 @@ qiime feature-table filter-features \
 
  qiime taxa filter-table --p-include Actinopteri --i-table sample-contingency-filtered-table.qza --i-taxonomy taxonomy_chordates.qza --o-filtered-table table-dada2chordates100.qza --p-mode contains
 
-#Cephalopods
+#Cephalopods (SECOND INDEPENDENT DATASET)
 ###Cephalopods primers are much less specific --> softier trimming
 qiime feature-table filter-features \
   --i-table table-dada2cephalo.qza \
@@ -30,7 +30,7 @@ qiime feature-table filter-features \
  qiime taxa filter-table --p-include cephalopoda --i-table sample-contingency-filtered-table.qza --i-taxonomy taxonomy_cephalo.qza --o-filtered-table table-dada2cephalo50.qza --p-mode contains
 ```
 
-I have a look at the alpha rarefaction curves to know hww many reads is enough:
+I have a look at the alpha rarefaction curves to know how many reads is enough:
 
 
 ```
