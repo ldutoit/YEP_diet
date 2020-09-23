@@ -112,4 +112,4 @@ qiime taxa barplot \
   --m-metadata-file ~/repos/scripts/YEP_diet/metadata/sample_metadata.tsv \
   --o-visualization taxa-bar-plotschordates.qzv
 ```
-This barplot can be visualised into qiime2. We then proceeded with the file [downstreamfiltering.md] that filters only Fishes from this dataset as well as deal with a minimum number of sequences.
+This barplot can be visualised into qiime2. We then proceeded with the file [downstreamfiltering.md](downstreamfiltering.md) that filters only Fishes from this dataset as well as deal with a minimum number of sequences.
