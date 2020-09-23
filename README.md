@@ -2,21 +2,19 @@
 
 ## Description
 Looking at prey detection from faecal samples of yellow eyed penguins. Sequenced 16S paired-end reads.
+The code behind the paper:
 
-## Key Players
-Mel Young (PhD student Zoology)
-Bruce Robertson (PI)
-Professor Yolanda van Heezik (PI)
+Young, Melanie J., Ludovic Dutoit, Fiona Robertson, Yolanda van Heezik, Philip J. Seddon, and Bruce C. Robertson. "Species in the faeces: DNA metabarcoding as a method to determine the diet of the endangered yellow-eyed penguin." Wildlife Research 47, no. 6 (2020): 509-522.
+[https://www.publish.csiro.au/WR/WR19246](https://www.publish.csiro.au/WR/WR19246)
+
 
 ## Objectives
-Obtain presence absence for all yellow-eyed penguin diet species.
+Obtain presence absence yellow-eyed penguin diet species.
 
 ## Physical location of the data
-For now, the raw data is on the Robertson lab HCS storage  at otago uni:
+The raw data is on NCBI at:
 
-/home/ludovic.dutoit/projectsmb://storage.hcs-p01.otago.ac.nz/sci-zoology-kakapogenome/Ludo/YEP_poo_16S_eDNAs/
-
-The processed and archive data is stored on : ...
+[https://dataview.ncbi.nlm.nih.gov/object/PRJNA641694](https://dataview.ncbi.nlm.nih.gov/object/PRJNA641694)
 
 
 ## Output files
@@ -39,21 +37,7 @@ the original data consists of 16S samples for 220 penguins. 1 is metagenomic dat
 
 ## Analyses
 
-### Quick and Dirty
 
-I did a first quick and VERY dirty run through QIIME2 on 10 samples to explore what was happening ( see [quickanddirtyqiime.md](quickanddirtyqiime.md))
-That allowed me to detect:
-
-S1 is the metagenomics sample (not ampliconic).
-
-There is plenty of fish.
-
-The fastqc also shows large amount of nextera transposase left:
-
-```
-mkdir fastqc
-fastqc source_files/OG3968_fastq/*.fastq -o fastqc
-```
 
 ## Clean Run on different primer pairs
 
@@ -64,7 +48,7 @@ I start by cleaning the nextera transposase using [removenextera.sh](removenexte
 
 This was done by separating the fastq file according to the first 6bp of both primers using [sort_by_primers.py](sort_by_primers.py). I also need to remove the primers in the sequences, I do it using [removeprimers.md](removeprimers.md)
 
-We then ran two independant analysis:
+After cleaning the sequences, we ran two independant analysis:
 
 **[QIIME2pipeCHORDATES.md](QIIME2pipeCHORDATES.md)**
 
